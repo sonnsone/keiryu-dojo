@@ -8,7 +8,7 @@ $container-margin-width: 145px;
 @import '../_sass/nav';
 @import '../_sass/form';
 @import '../_sass/container';
-@import url("https://use.typekit.net/crp1kbb.css");
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
 
 
 body {
@@ -30,5 +30,11 @@ a {
     &:active {
         color:white;
         background-color:$brand-color;
+    }
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+    body {
+        background-image: url('{{ site.url }}/{{ site.baseurl }}/files/background-mobile.jpg');
     }
 }
