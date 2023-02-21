@@ -31,7 +31,7 @@
 .container__footer {
     text-align: center;
     margin: $spacing-unit-default;
-    color: $main-color;
+    color: $brand-color;
 }
 
 @media (min-width: 2 * $container-margin-width + $container-width) {
@@ -42,10 +42,10 @@
 
 @media only screen and (max-width: $screen-sm-max) {
     .container__header {
-        background: url('../files/logo-h.png') center bottom no-repeat;
-        height: 150px;
+        background: url('../files/logo.png') center top no-repeat;
+        height: 400px;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 40px;
 
         h1 {
             display: none;
