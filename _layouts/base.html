@@ -29,11 +29,12 @@
     <meta property="twitter:site" content="@{{ site.twitter_username }}" />
     <meta property="twitter:creator" content="@ANDco_o" />
 
+
+    <link href="{{ '/styles/main.css' | absolute_url }}?{{site.time | date: '%s%N'}}" rel="stylesheet">
+    <link href="{{ '/styles/print.css' | absolute_url }}?{{site.time | date: '%s%N'}}" rel="stylesheet" media="print">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
-    <link href="{{ '/styles/main.css' | absolute_url }}?{{site.time | date: '%s%N'}}" rel="stylesheet">
-    <link href="{{ '/styles/print.css' | absolute_url }}?{{site.time | date: '%s%N'}}" rel="stylesheet" media="print">
 
     <link rel="canonical" href="{{ site.url }}/{{ page.url }}">
 
