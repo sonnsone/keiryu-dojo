@@ -1,0 +1,66 @@
+title: Kei Ryu Dojo
+description: Kei Ryu Dojo
+author: Sonnsone
+email: info@kei-ryu.ch
+
+street: "Rue des Tonneliers 9"
+city: "Sion"
+zip: "1950"
+state: "Valais"
+country: "Suisse"
+latitude: "46.23521967670168"
+longitude: "7.361471681657769"
+
+
+baseurl: ""
+url: "https://sonnsone.github.io/kei-ryu/"
+
+exclude:
+
+# Build settings
+markdown: kramdown
+plugins:
+    - jekyll-feed
+    - jekyll-coffeescript
+    - jekyll-paginate
+    - jekyll-sitemap
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - node_modules
+    - package.json
+
+# Github forced settings
+lsi: false
+safe: true  
+incremental: false
+highlighter: rouge
+gist:
+    noscript: false
+
+kramdown:
+    input: GFM
+    hard_wrap: false
+
+collections:
+    tsksr:
+        output: true
+
+    contact:
+        output: true
+
+    propos:
+        output: true
+
+# Sitemap
+
+sitemap:
+    filename: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"

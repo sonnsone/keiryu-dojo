@@ -1,0 +1,39 @@
+/*----------------------------------------*\
+  BOX
+\*----------------------------------------*/
+
+.#{$namespace}box,
+%box {
+  padding: $spacing-unit-default;
+}
+
+
+/**
+ * Spacings
+ */
+
+@include foreach-alternative-spacing() {
+  .#{$namespace}box--#{$spacing-name},
+  %box--#{$spacing-name} {
+    padding: #{$spacing-value};
+  }
+}
+
+
+/**
+ * Styles
+ */
+
+.#{$namespace}box--default,
+%box--default {
+  color: $box-default-color;
+
+  background-color: $box-default-bkg-color;
+}
+
+.#{$namespace}box--primary,
+%box--primary {
+  color: $box-primary-color;
+
+  background-color: $box-primary-bkg-color;
+}

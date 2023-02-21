@@ -1,0 +1,13 @@
+---
+layout: base
+---
+
+<div class="post-list post--center w-1/1">
+    {% assign tuina = site.tuina | sort: 'order' %}
+    {% for post in tuina %}
+        <div class="post">
+            <h1 class="post__title">{{ post.title }}</h1>
+            {{ post.content }}
+        </div>
+    {% endfor %}
+</div>

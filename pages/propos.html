@@ -1,0 +1,13 @@
+---
+layout: base
+---
+
+<div class="post-list post--center w-1/1">
+    {% assign propos = site.propos | sort: 'order' %}
+    {% for post in propos %}
+        <div class="post">
+            <h1 class="post__title">{{ post.title }}</h1>
+            {{ post.content }}
+        </div>
+    {% endfor %}
+</div>

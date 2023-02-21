@@ -1,0 +1,42 @@
+/*----------------------------------------*\
+  LIST STACKED
+\*----------------------------------------*/
+
+.#{$namespace}list-stacked,
+%list-stacked {
+  @extend %list;
+
+  > li {
+    padding: $spacing-unit-default/2 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+  // Add separators
+  .#{$namespace}list-stacked--divided,
+  %list-stacked--divided {
+    > li + li {
+      border-top: $list-separator-style;
+    }
+  }
+
+  /**
+   * Sizes
+   */
+
+  @include foreach-alternative-spacing() {
+    .#{$namespace}list-stacked--#{$spacing-name},
+    %list-stacked--#{$spacing-name} {
+      > li {
+        padding-top: $spacing-value / 2;
+        padding-bottom: $spacing-value / 2;
+      }
+    }
+  }

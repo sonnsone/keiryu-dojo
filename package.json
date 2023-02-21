@@ -1,0 +1,11 @@
+{
+  "name": "Kei Ryu Dojo",
+  "version": "1.0.0",
+  "main": "README.md",
+  "author": "Sonnsone",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "kanbasu": "^2.0.0"
+  }
+}

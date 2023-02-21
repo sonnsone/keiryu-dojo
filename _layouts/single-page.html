@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="fr">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#" itemscope itemtype="http://schema.org/WebSite">
+    <meta charset="utf-8" />
+
+    <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
+    <meta property="og:type" content="business.business" />
+    <meta property="og:site_name" content="{{ site.title }}"/>
+    <meta property="og:locale" content="fr_CH" />
+
+    <meta property="business:contact_data:street_address" content="{{ site.street }}" />
+    <meta property="business:contact_data:locality" content="{{ site.city }}" />
+    <meta property="business:contact_data:postal_code" content="{{ site.zip }}" />
+    <meta property="business:contact_data:country_name" content="{{ site.country }}" />
+    <meta property="place:location:latitude" content="{{ site.latitude }}" />
+    <meta property="place:location:longitude" content="{{ site.longitude }}" />
+
+    <meta itemprop="name" property="og:title" content="{{ site.title }}" />
+    <meta itemprop="image" property="og:image" content="{{ '/files/facebook.jpg' | absolute_url }}" />
+    <meta itemprop="url" property="og:url" content="{{ site.url }}/{{ page.url }}" />
+    <meta itemprop="description" property="og:description" content="{{ site.description }}" />
+
+
+    <link rel="stylesheet" href="https://use.typekit.net/crp1kbb.css">
+    <link href="{{ '/styles/main.css' | absolute_url }}?{{site.time | date: '%s%N'}}" rel="stylesheet">
+    <link href="{{ '/styles/print.css' | absolute_url }}?{{site.time | date: '%s%N'}}" rel="stylesheet" media="print">
+
+    <link rel="canonical" href="{{ site.url }}/{{ page.url }}">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.jpg">
+
+    <meta name="msapplication-navbutton-color" content="#FFFFFF">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
+</head>
+
+<body class="container">
+    <script type="text/javascript">
+        var github_url = 'https://sonnsone.github.io/';
+        var current = window.location.href;
+        if(current.indexOf(github_url) === 0) {
+            window.location.href = '{{ page.url | absolute_url}}';
+        }
+    </script>
+
+    <div class="container__content">
+        {{ content }}
+    </div>
+
+
+    <script type="text/javascript" src="{{ '/javascripts/main.js' | absolute_url }}?{{site.time | date: '%s%N'}}"></script>
+    <script type="text/javascript">
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create', '{{ site.ga }}', 'auto');ga('send', 'pageview');
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>

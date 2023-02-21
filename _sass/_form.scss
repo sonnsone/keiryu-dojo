@@ -1,0 +1,27 @@
+.form {
+    font-family: $font-family-default;
+    font-size: $font-size-medium;
+    font-weight:bold;
+}
+
+.field-label {
+    display:none;
+}
+
+.field {
+    color:$brand-color;
+    margin-top:5px;
+    padding:5px;
+    border-style:solid;
+    border-width:2px;
+    background-color:transparent;
+}
+
+.form__button {
+    color:$brand-color;
+    padding:5px;
+    border-style:solid;
+    border-width:2px;
+    background-color:transparent;
+}
+
