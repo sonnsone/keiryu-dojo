@@ -53,19 +53,3 @@
     }
 }
 
-.footer {
-    position:fixed;
-    bottom:0;
-    font-size:90%;
-}
-
-top__centered {
-    transform: translateY(60%);
-}
-
-@media only screen and (max-width: $screen-sm-max) {
-    top__centered {
-        transform: none;
-    }
-}
-

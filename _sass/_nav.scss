@@ -19,6 +19,20 @@
     margin-top:$small-margin;
 }
 
+.nav__item--title {
+    color:$brand-color;
+    display:inline-block;
+    justify-content:left;
+    font-size:$font-size-small;
+    text-transform:Uppercase;
+    font-weight:bold;
+    padding:5px;
+    border-bottom: 2px solid;
+    width:fit-content;
+    margin:auto;
+    margin-top:$small-margin;
+}
+
 .nav__toggle, .nav__hamburger {
     display: block;
     width: 40px;
