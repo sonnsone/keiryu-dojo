@@ -52,6 +52,9 @@ collections:
     propos:
         output: true
 
+    keiryu:
+        output: true
+
 # Sitemap
 
 sitemap:
