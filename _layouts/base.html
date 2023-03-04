@@ -82,15 +82,17 @@
             </div>
     </div>
 
-    <footer class="container__footer">
-        <address>
-            {{ site.title }} |
-            {{ site.street }} |
-            {{ site.zip }} {{ site.city }} |
-            {{ site.state }} - {{ site.country }} |
-            <a href="mailto:{{ site.email }}">{{ site.email }}</a><br><br>
-            designed by <b><a href="http://www.sonnsone.ch" target="blank">Sonnsone</a></b>
-        </address>
+    <footer class="container__footer container__content">
+        <div class="grid grid--center grid--middle">
+            <address class="grid__item sm-w-1/1">
+                {{ site.title }} |
+                {{ site.street }} |
+                {{ site.zip }} {{ site.city }} |
+                {{ site.state }} - {{ site.country }} |
+                <a href="mailto:{{ site.email }}">{{ site.email }}</a><br><br>
+                designed by <b><a href="http://www.sonnsone.ch" target="blank">Sonnsone</a></b>
+            </address>
+        </div>
     </footer>
 
     <script type="text/javascript" src="{{ '/javascripts/main.js' | absolute_url }}?{{site.time | date: '%s%N'}}"></script>
