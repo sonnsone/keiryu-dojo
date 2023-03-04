@@ -12,14 +12,17 @@
     text-transform:Uppercase;
     font-weight:bold;
     padding:5px;
-    border-style:solid;
-    border-width:2px;
     width:fit-content;
     margin:auto;
     margin-top:$small-margin;
 }
 
-.nav__item--title {
+.nav--border {
+    border-style:solid;
+    border-width:2px;
+}
+
+.nav--border-bottom {
     border-bottom: 2px solid;
 }
 
