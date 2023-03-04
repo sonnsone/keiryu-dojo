@@ -1,16 +1,19 @@
 ---
 layout: base
 ---
-{% assign posts = site.posts | sort: 'date' %}
+{% assign posts = site.keiryu | sort: 'name' %}
 {% assign tsksr = site.tsksr | sort: 'name' %}
 {% assign propos = site.propos | sort: 'name' %}
 {% assign contact = site.contact | sort: 'name' %}
+{% assign posts = site.posts | sort: 'date' %}
 
 <div class="post-list post--center w-1/1">
+    {% for post in keiryu %}
         <div class="post">
-            <h1 class="post__title">渓流道場, KEIRYU Dojo</h1>
-        <p>Très courte philosophie du Dojo ou explication</p>
+            <h1 class="post__title">{{ post.title }}</h1>
+            {{ post.content }}
         </div>
+    {% endfor %}
 </div>
 
 <div class="post-list post--center w-1/1">
