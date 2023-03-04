@@ -75,8 +75,8 @@
         </ul>
     </nav>
 
-    <div class="container__content">
-        <div class="grid grid--center grid--middle">
+    <div class="container__content relative-parent">
+        <div class="grid grid--center position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%)">
             <div class="grid__item pdg mrgl box box--tight box--default sm-w-1/1">
             {{ content }}
             </div>
@@ -84,13 +84,15 @@
 
     <footer class="container__footer container__content">
         <div class="grid grid--center grid--middle">
-            <address class="grid__item sm-w-1/1">
-                {{ site.title }} |
-                {{ site.street }} |
-                {{ site.zip }} {{ site.city }} |
-                {{ site.state }} - {{ site.country }} |
-                <a href="mailto:{{ site.email }}">{{ site.email }}</a><br><br>
-                designed by <b><a href="http://www.sonnsone.ch" target="blank">Sonnsone</a></b>
+            <address class="grid__item pdg mrgl box box--tight box--default sm-w-1/1">
+                    <div class="post--center w-1/1">
+                    {{ site.title }} |
+                    {{ site.street }} |
+                    {{ site.zip }} {{ site.city }} |
+                    {{ site.state }} - {{ site.country }} |
+                    <a href="mailto:{{ site.email }}">{{ site.email }}</a><br><br>
+                    designed by <b><a href="http://www.sonnsone.ch" target="blank">Sonnsone</a></b>
+                    </div>
             </address>
         </div>
     </footer>
